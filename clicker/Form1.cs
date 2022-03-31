@@ -31,5 +31,10 @@ namespace clicker
                 button2.Text = "Ulepsz\n" + nextUpgradeCost;
             }
         }
+
+        private void button3_exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

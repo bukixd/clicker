@@ -35,6 +35,7 @@ namespace clicker
             this.siano = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.ButtonLevelTextBox = new System.Windows.Forms.TextBox();
+            this.button3_exit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -56,7 +57,7 @@ namespace clicker
             // siano
             // 
             this.siano.AutoSize = true;
-            this.siano.Location = new System.Drawing.Point(710, 9);
+            this.siano.Location = new System.Drawing.Point(632, 273);
             this.siano.Name = "siano";
             this.siano.Size = new System.Drawing.Size(78, 15);
             this.siano.TabIndex = 1;
@@ -82,12 +83,23 @@ namespace clicker
             this.ButtonLevelTextBox.Text = "1";
             this.ButtonLevelTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // button3_exit
+            // 
+            this.button3_exit.Location = new System.Drawing.Point(12, 415);
+            this.button3_exit.Name = "button3_exit";
+            this.button3_exit.Size = new System.Drawing.Size(65, 23);
+            this.button3_exit.TabIndex = 4;
+            this.button3_exit.Text = "Wyjście";
+            this.button3_exit.UseVisualStyleBackColor = true;
+            this.button3_exit.Click += new System.EventHandler(this.button3_exit_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::clicker.Properties.Resources.watykan;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button3_exit);
             this.Controls.Add(this.ButtonLevelTextBox);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.siano);
@@ -105,5 +117,6 @@ namespace clicker
         private Label siano;
         private Button button2;
         private TextBox ButtonLevelTextBox;
+        private Button button3_exit;
     }
 }
